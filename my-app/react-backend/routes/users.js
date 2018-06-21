@@ -7,12 +7,12 @@ router.get('/', function(req, res, next) {
   res.json([
       {
           id: '0',
-          message: 'Welcome to react chatbot!',
+          message: 'Welcome to Aruba Helpdesk ChatBot!',
           trigger: '1',
       },
       {
           id: '1',
-          message: 'Bye!',
+          message: 'How may I assist you?',
           end: true,
       },
   ]);

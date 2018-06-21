@@ -3,15 +3,24 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 120px;
+  float: left;
+}
+
+.body-logo {
+  height: 240px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: black;
   padding: 20px;
   color: white;
+}
+
+.App-left-body {
+  width: 65%;
+  position: absolute;
+  padding: 50px;
 }
 
 .App-title {
@@ -25,4 +34,17 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.rsc {
+  float: right;
+  padding: 50px;
+}
+
+.rsc-ts-bubble {
+  background: orange !important;
+}
+
+.rsc-header  {
+  background: orange !important;
 }
