@@ -16,8 +16,8 @@ class App extends Component {
 
         </header>
         <div>
-          <h1 class="App-left-body">Overcome all hurdles and provide consistent self-service answers with our IT Helpdesk Bot 
-            <div class="body-image"><img src={deskicon} className="body-logo" alt="logo" /></div>
+          <h1 className="App-left-body">Overcome all hurdles and provide consistent self-service answers with our IT Helpdesk Bot
+            <div className="body-image"><img src={deskicon} className="body-logo" alt="logo" /></div>
           </h1>
         </div>
 <ChatHelpDesk/>
