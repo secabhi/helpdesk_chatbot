@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
    },
    {
        id: '1',
-       message: 'May I know you Name? to help you assist.',
+       message: 'May I know your Name?',
        trigger: '2',
    },
    {
@@ -61,14 +61,14 @@ router.get('/', function(req, res, next) {
    {
        id: 'yesnooption',
        options: [
-           { value: 'Thanks for using Aruba ChatBot.', label: 'NO', trigger: '9' },
+           { value: 'Thanks for using Aruba ChatBot!', label: 'NO', trigger: '9' },
            { label: 'YES', trigger: '4' },
        ],
        user: false
    },
    {
        id: '9',
-       message: '{previousValue}!',
+       message: '{previousValue}',
        end: true
    },
   ]);

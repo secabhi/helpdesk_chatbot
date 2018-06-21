@@ -10,6 +10,21 @@
 .body-logo {
   height: 350px;
   padding-top: 50px;
+  float: left;
+}
+
+.body-logo-top {
+   height: 140px;
+   padding-top: 115px;
+   position: relative;
+   left: 50px;
+}
+
+.body-logo-top-up {
+   height: 75px;
+   position: relative;
+   top: -25px;
+   left: -224px;
 }
 
 .App-header {
