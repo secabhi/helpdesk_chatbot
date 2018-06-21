@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ChatBot from 'react-simple-chatbot';
+import icon from '../helpdesk-icon.jpg';
 
 // const steps = [
 //     {
@@ -33,7 +34,7 @@ export default class ChatHelpDesk extends Component {
     render() {
     return (
       <div>
-          {this.state.users.length==0?"You will soon be attented...":<ChatBot steps={this.state.users} />}
+          {this.state.users.length==0?"You will soon be attented...":<ChatBot width="375px" recognitionEnable="true" recognitionLang="en" botAvatar={icon} steps={this.state.users} />}
       </div>
     )
   }

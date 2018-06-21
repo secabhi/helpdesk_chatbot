@@ -8,17 +8,18 @@
 }
 
 .body-logo {
-  height: 240px;
+  height: 350px;
+  padding-top: 50px;
 }
 
 .App-header {
   background-color: black;
   padding: 20px;
-  color: white;
+  color: #9ED5C9;
 }
 
 .App-left-body {
-  width: 65%;
+  width: 62%;
   position: absolute;
   padding: 50px;
 }
@@ -39,12 +40,17 @@
 .rsc {
   float: right;
   padding: 50px;
+  background-image: url('./aruba-banner-web.jpg');
 }
 
 .rsc-ts-bubble {
-  background: orange !important;
+  background: #9ED5C9 !important;
 }
 
 .rsc-header  {
-  background: orange !important;
+  background: #ff8300 !important;
+}
+
+.rsc-os-option-element {
+  background: #9ED5C9 !important;
 }
