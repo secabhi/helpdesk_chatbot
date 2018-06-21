@@ -51,6 +51,24 @@ router.get('/', function(req, res, next) {
    {
        id: '7',
        message: 'E-Mail address is {previousValue}.',
+       trigger: '8'
+   },
+   {
+       id: '8',
+       message: 'Do you need any other information?',
+       trigger: 'yesnooption'
+   },
+   {
+       id: 'yesnooption',
+       options: [
+           { value: 'Thanks for using Aruba ChatBot.', label: 'NO', trigger: '9' },
+           { label: 'YES', trigger: '4' },
+       ],
+       user: false
+   },
+   {
+       id: '9',
+       message: '{previousValue}!',
        end: true
    },
   ]);
