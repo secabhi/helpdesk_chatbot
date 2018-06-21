@@ -1,0 +1,8 @@
+{
+  "name": "helpdesk_chatbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/secabhi/helpdesk_chatbot.git",
+  "author": "secabhi <catchabhi@live.com>",
+  "license": "MIT"
+}
