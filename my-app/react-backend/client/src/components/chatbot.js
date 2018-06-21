@@ -10,9 +10,6 @@ function cheackval(val) {
   if (constvalue.welcome.indexOf(val.previousValue) !== -1) {
     return 'Sorry, Didn\'t understand that';
   }
-  if (constvalue.welcome) {
-
-  }
   return val.previousValue;
 }
 
@@ -20,8 +17,9 @@ function cheackassitval(val) {
   if (constvalue.general.indexOf(val.previousValue) !== -1) {
     return 'Sorry to hear that you lost your ' + val.previousValue.split(' ')[val.previousValue.split(' ').length - 1]
   }
-  if (constvalue.welcome) {
-
+  else if (val.previousValue.split(' ').indexOf('lost')!== -1) {
+    //return datas.length
+    return 'Sorry to hear that you lost your ' + val.previousValue.split(' ')[val.previousValue.split(' ').length - 1];
   }
   return val.previousValue;
 }
@@ -32,7 +30,12 @@ function checkassistrigger(val) {
     if (datas[datas.length - 1].value === val.value) {
       return datas.length
     }
-  } else {
+  }
+  else if (val.value.split(' ').indexOf('lost')!== -1) {
+    return datas.length
+    //return 'Sorry to hear that you lost your ' + val.value.split(' ')[val.value.split(' ').length - 1];
+  }
+  else {
     if (datas[datas.length - 1].message === "Sorry, Didn't understand that" && !val.value) {
       return 1
     }
@@ -59,8 +62,8 @@ function checktrigger(val) {
     }
     else if (val.value) {
       let index = datas.findIndex(x => x.value == val.value);
-      if(index !== undefined && index !== -1) {
-        if(index == 2){
+      if (index !== undefined && index !== -1) {
+        if (index == 2) {
           return 3;
         }
       }
