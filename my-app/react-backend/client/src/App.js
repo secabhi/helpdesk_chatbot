@@ -6,7 +6,7 @@ import iconBot from './helpdesk-icon-1.png';
 
 import './App.css';
 
-import ChatHelpDesk from './components/chatbot.js';
+import ChatHelpDesk from '../src/components/chatbot';
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
 
         </header>
         <div>
-          <h1 className="App-left-body">Overcome all hurdles and provide consistent self-service answers with our IT Helpdesk ChatBot 
+          <h1 className="App-left-body">Overcome all hurdles and provide consistent self-service answers with our IT Helpdesk ChatBot
             <div className="body-image"><img src={deskicon} className="body-logo" /><img src={iconBot} className="body-logo-top"/><img src={talkicon} className="body-logo-top-up"/></div>
           </h1>
         </div>
